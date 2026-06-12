@@ -1,4 +1,4 @@
-package introducao;
+package introducao.operadores;
 
 public class Aula03Operadores {
     public static void main(String[] args) {
@@ -22,10 +22,16 @@ public class Aula03Operadores {
         boolean eMaior = 10 > 5;      // true
         boolean eIgual = (10 == 10);  // true (usa-se dois sinais de igual para comparar)
         boolean eDiferente = (10 != 5); // true
+        boolean eMaiorOuIgual = 10 >= 5;
+        boolean eMenorOuIgual = 10 <= 5;
 
         // 4. Operadores LÓGICOS
+        // && (AND) || (or)
         // && (E): Verdadeiro se AMBOS forem verdade
         boolean testeE = (10 > 5) && (2 < 1); // false, porque 2 não é menor que 1
+        int idade = 20;
+        float salarioFloat = 2050F;
+        boolean aIdadeEMaiorQueDezoito = idade > 18 && salarioFloat > 3000;
 
         // || (OU): Verdadeiro se PELO MENOS UM for verdade
         boolean testeOu = (10 > 5) || (2 < 1); // true, porque a primeira parte é verdade
@@ -35,5 +41,6 @@ public class Aula03Operadores {
         System.out.println("Resto da divisão de 10 por 3: " + resto);
         System.out.println("10 é maior que 5? " + eMaior);
         System.out.println("Resultado Lógico OU: " + testeOu);
+        System.out.println("Qual o Resultado: " + aIdadeEMaiorQueDezoito);
     }
 }

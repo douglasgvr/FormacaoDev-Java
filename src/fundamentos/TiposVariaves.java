@@ -24,5 +24,10 @@ public class TiposVariaves {
         //Tipo boolean
         boolean isAtivo = false;
 
+        // char serve para uma unica letra, como v ou f, tipo de sexo f ou m,
+        // serve também para capturar as letras digitadas no teclado
+        // exemplo ao digitar o + no teclado ele pode ajudar a saber que é pra somar em um algoritmo
+        char sexo = 'M';
+
     }
 }
